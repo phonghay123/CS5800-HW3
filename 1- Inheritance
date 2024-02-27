@@ -46,9 +46,9 @@ class BaseEmployee {
     + setBaseSalary(baseSalary: int): void
     + toString(): String
 }
-SalariedEmployee <|-- Employee
-HourlyEmployee <|-- Employee
-CommissionEmployee <|-- Employee
-BaseEmployee <|-- Employee
+Employee <|-- SalariedEmployee
+Employee <|-- HourlyEmployee
+Employee <|-- CommissionEmployee
+Employee <|-- BaseEmployee
 
 @enduml
