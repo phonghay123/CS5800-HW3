@@ -1,43 +1,43 @@
 @startuml
 'https://plantuml.com/class-diagram
 
-object File{
+object "<u>File</u>" as File{
    name = ".htaccess"
 }
 
-object File1{
+object "<u>File</u>"  as File1{
    name = ".htrouter.php"
 }
 
-object File2{
+object "<u>File</u>"  as File2{
    name = "index.html"
 }
 
-object Folder{
+object "<u>phpdemo1:Folder</u>" as Folder{
    name = "php_demo1"
 }
 
-object Folder1{
+object "<u>Folder</u>" as Folder1{
    name = ".phalcon"
 }
 
-object Folder2{
+object "<u>Folder</u>" as Folder2{
    name = "cache"
 }
 
-object Folder3{
+object "<u>Folder</u>" as Folder3{
    name = "public"
 }
 
-object Folder4{
+object "<u>Folder</u>" as Folder4{
    name = "Include Path"
 }
 
-object Folder5{
+object  "<u>Folder</u>" as Folder5{
    name = "Remote Files"
 }
 
-object Folder6{
+object "<u>Folder</u>" as Folder6{
    name = "Source Files"
 }
 
