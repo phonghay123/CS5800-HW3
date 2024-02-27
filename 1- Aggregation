@@ -1,50 +1,51 @@
 @startuml
 'https://plantuml.com/class-diagram
 
-class Instructor{
-~ String firstName,lastName
-~ String officeNumber
-+ String getFirstName()
-+ void setFirstName(String firstName)
-+ String getLastName()
-+ void setLastName(String lastName)
-+ String getOfficeNumber()
-+ void setOfficeNumber(String officeNumber)
-+ {method} String toString()
+class Instructor {
+     firstName: String
+     lastName: String
+     officeNumber: String
+    + getFirstName(): String
+    + setFirstName(firstName: String): void
+    + getLastName(): String
+    + setLastName(lastName: String): void
+    + getOfficeNumber(): String
+    + setOfficeNumber(officeNumber: String): void
+    + toString(): String
 }
 
-class Textbook{
-~ String title
-~ String author
-~ String publisher
-+ String getTitle()
-+ String void setTitle(String title)
-+ String getAuthor()
-+ void setAuthor(String author)
-+ String getPublisher()
-+  void setPublisher(String publisher)
-+ {method} String toString()
-}
-class Course{
-~ String name
-~ ArrayList<Instructor> instructors
-~ ArrayList<Textbook> textbooks
-+ Course()
-+ String getName()
-+ void setName(String name)
-+ ArrayList<Instructor> getInstructors()
-+ void setInstructor(Instructor instructor)
-+ ArrayList<Textbook> getTextbooks()
-+ void setTextbook(Textbook textbook)
-+ {method} String toString()
+class Textbook {
+     title: String
+     author: String
+     publisher: String
+    + getTitle(): String
+    + setTitle(title: String): void
+    + getAuthor(): String
+    + setAuthor(author: String): void
+    + getPublisher(): String
+    + setPublisher(publisher: String): void
+    + toString(): String
 }
 
+class Course {
+     name: String
+     instructors: ArrayList<Instructor>
+     textbooks: ArrayList<Textbook>
+    + Course()
+    + getName(): String
+    + setName(name: String): void
+    + getInstructors(): ArrayList<Instructor>
+    + setInstructor(instructor: Instructor): void
+    + getTextbooks(): ArrayList<Textbook>
+    + setTextbook(textbook: Textbook): void
+    + toString(): String
+}
 
 
-Course o-- Instructor : aggregation
-Course o-- Textbook : aggregation
+
+Course "1" o-- "*"Instructor : aggregation
+Course "1" o-- "*"Textbook : aggregation
 
 
 
 @enduml
-
