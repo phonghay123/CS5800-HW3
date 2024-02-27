@@ -1,29 +1,29 @@
 @startuml
 'https://plantuml.com/class-diagram
 
-object Course{
+object "<u>course:Course</u>" as Course{
     name = "CS5800 - Advanced Software Engineering"
 }
 
-object Instructor{
+object "<u>instructor:Instructor</u>" as Instructor{
     firstName = "Nima"
     lastName = "Davarpanah"
     officeNumber = "3-2636"
 }
 
-object Textbook{
+object "<u>textbook:Textbook</u>" as Textbook{
     title = "CleanCode:A Handbook of Agile Software Craftsmanship"
     author = "Robert Cecil Martin"
     publisher = "Pearson"
 }
 
-object Instructor1{
+object "<u>secondInstructor:Instructor</u>" as Instructor1{
     firstName = "Hao"
     lastName = "Ji"
     officeNumber = "8-42"
 }
 
-object Textbook1{
+object "<u>secondTextbook:Textbook</u>" as Textbook1{
     title = "Me Talk Pretty One Day"
     author = "David Sedaris"
     publisher = "Back Bay Books"
