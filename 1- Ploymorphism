@@ -25,7 +25,7 @@ class CruiseShip {
     + toString(): String
 }
 
-CargoShip <|-- Ship
-CruiseShip <|-- Ship
+Ship <|-- CargoShip
+Ship <|-- CruiseShip
 
 @enduml
