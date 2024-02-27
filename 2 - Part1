@@ -1,31 +1,31 @@
 @startuml
 'https://plantuml.com/class-diagram
 
-object Ship0{
+object "<u>ship[0]:Ship</u>" as ship0{
     shipName = "Titanic"
     yearBuilt = "March31st,1909"
 }
 
-object Ship1{
+object "<u>ship[1]:Ship</u>" as ship1{
     shipName = "MVGemini"
     yearBuilt = "May30th,1991"
 }
 
-object Ship2{
+object "<u>ship[2]:Ship</u>" as ship2{
     shipName = "EverGiven"
     yearBuilt = "September25th,2018"
 }
 
-object CargoShip{
+object "<u>cargoShip:<u>CargoShip</u>" as cargo{
     cargoCapacityInTonnage = 220940
 }
 
-object CruiseShip{
+object "<u>cruiseShip:<u>CruiseShip</u>" as cruise{
     maxNumberPassengers = 100
 }
 
-Ship2 <|-- CargoShip
-Ship1 <|-- CruiseShip
+ship2 <|-- cargo
+ship1 <|-- cruise
 
 
 @enduml
