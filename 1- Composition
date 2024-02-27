@@ -27,7 +27,8 @@ class Folder {
 
 
 
-Folder "1" *-- "many" File : composition
+Folder "1" *-- "0..*"File : composition
+Folder "1" <-->"0..*" Folder
 
 
 
